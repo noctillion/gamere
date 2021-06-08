@@ -20,10 +20,12 @@ const data= { h:datax.uno.h,
 
 
 useKeyPress((e)=>{
-    const dir = e.key.replace('Arrow', '').toLowerCase();
-    walk(dir)
-     //if(directions.hasOwnProperty(dir)) console.dir(dir)
     e.preventDefault()
+    const dir = e.key.replace('Arrow', '').toLowerCase();
+    const sal = e.key.replace('Backspace', '').toLowerCase();
+    console.log(sal)
+    walk(dir)
+    
   })
 
 
