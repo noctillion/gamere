@@ -1,9 +1,11 @@
 import './App.css';
+import Player from './components/player/player';
 
 function App() {
+
   return (
     <div className="App">
- aqui
+        <Player/>
     </div>
   );
 }
